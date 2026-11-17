@@ -402,7 +402,10 @@ To open browser in a device: npx playwright codegen --device="iPhone 11 Pro"
 All commands is present in : npx playwright codegen --help
 
 ### Traceviewer
-is a GUI tool, to view the execution details
+is a GUI tool, to view the execution details.
+
+_traceViewer is good for debugging: has a timeLine section at the top, all the actions that were performed during the test execution on one side: click on each action and it will display the DOM snapshot, you can see what happend during, before an dafter the action, you can also click on Pick locator and select any web elemen ton th eDOM snapshot and it will suggest th eexect locator to be used. You can pop out this DOM snapshot and view the console logs, network tab etc._
+
 Playwright waits for 30 seconds before failing  a test. this value can be changed by adding : timeout:5*1000, (which is 5ms=5s), in the playwright.cofig.ts file
 to explicitly say how many retries has to be done on failure spcify:  retries:1, in the same config file.
 Execute a test such that it fails.
@@ -444,6 +447,7 @@ Ctrl + click on the trace: it will show all the options:
     });
 
    ```
+
 ### To build a real project
 - Study material reference : https://www.youtube.com/watch?v=bP3M7vCGT4g
 
